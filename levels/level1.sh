@@ -47,3 +47,12 @@ LESSON 4 - SPECIAL VARIABLES
 	\$? = exit status of the last command
 	\$! = process number of the last background command"
 
+sleep 5
+echo "
+LESSON 5 - ARRAYS
+
+Arrays are used to store multiple values.
+Example:
+	SPORTS=(basketball soccer volley)
+	SPORTS[3]=tennis
+	SPORTS[4]=badminton"
