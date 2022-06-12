@@ -5,13 +5,35 @@
 
 echo "You Died"
 
-echo "Hey, do you like coffee? (y/n)"
+# First beast battle
 
-read coffee
+beast=$(( $RANDOM % 2 ))
 
-if [ $coffee == "y" ]
+echo "Your first beast approaches..."
+
+echo "Prepare to battle, pick a number between 0-1. (0/1)"
+
+read tarnished
+
+if [[ $beast == $tarnished || $tarnished == "milkshake" ]]
 then
-	echo "You're awesome"
+	echo "Beast VANQUISHED!! Congrats fellow tarnished"
 else
-	echo "Leave right now!!!"
+	echo "You Died AGAIN"
+	exit 1
+fi
+
+sleep 2
+
+echo "Boss battle. Get scared. It's Margit. Pick a number between 0-9. (0-9)"
+
+beast=$(( $RANDOM % 10 ))
+
+read tarnished
+
+if [[ $beast == $tarnished || $tarnished == "coffee" ]]
+then
+	echo "Beast VANQUISHED!! Congrats fellow tarnished"
+else
+	echo "You died AGAIN"
 fi
