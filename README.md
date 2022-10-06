@@ -1,6 +1,15 @@
 ## Description
 
-Getting started w bash scripting
+Learning scripting languages
 
-### ToDo
-- Make a interactive tutorial
+
+### Project Structure
+
+```
+.
+└── Bash
+    ├── Games
+    ├── Levels
+    └── Tutorials
+└── Lua
+```
