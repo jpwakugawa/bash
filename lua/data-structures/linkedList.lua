@@ -6,7 +6,7 @@ for i = 1, 3
 do
   print("Number: ", i)
   v = io.read("*number")
-  list ={next=list, value=v}
+  list = {next=list, value=v}
 end
 
 local l = list
